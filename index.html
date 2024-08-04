@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icha🚀</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+      <!--codingan CSS internal-->
+      <style> 
+          
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4863A0
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    opacity: .2;
+}
+.container{
+    color: #EBF4FA;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.progress-bar{
+    width: 360px;
+    height: 12px;
+    background-color: #5F6F94;
+    margin: auto;
+    margin-bottom: 100px;
+    opacity: .8;
+    position: relative;
+}
+
+.progress-bar::before{
+    content: "0%";
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    bottom: -18px;
+}
+
+.progress-bar::after{
+    content: "100%";
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    bottom: -18px;
+}
+
+.progress-bar span{
+    display: block;
+    width: 70%;
+    height: 12px;
+    background-color: #97D2EC;
+    animation: fill 5s ease-in-out forwards;
+}
+
+@keyframes fill{
+    from{
+        width: 0;
+    }
+    
+    to{
+        width: 40%;
+    }
+}
+
+.sm a{
+    display: inline-block;
+    width: 70px;
+    height: 55px;
+    background-color: #97D2EC;
+    line-height: 60px;
+    color: #151B54;
+    font-size: 22px;
+    border-radius: 20%;
+    margin: 0 15px;
+    opacity: .7;
+    transition: .3s linear;
+}
+
+.sm a:hover{
+    transform: scale(1.1);
+    opacity: 5;
+}
+
+      </style>
+      
+      
+  <div class="container">
+    <div class="bg">
+    </div>
+    <h1>WELCOME</h1>
+    <h3></h3>
+    <div class="progress-bar"><span></span></div>
+    <div class="sm">
+      <a href="http://wa.me/6285799580946?text=Hallo!+Icha+aku+ngefans+sama+kamu+>\\<"><i class="fab fa-whatsapp"></i></a>
+      <a href="http://instagram.com/xzqrnc"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@gjls0991"><i class="fab fa-tiktok"></i></a>
+      <a href="xzqrnc.github.io"><i class="fas fa-heart"></i></a>
+      
+      
+      
+      
+      <!--kodingan waktu-->
+  
+<script>
+function saySelamat() {
+  const date = new Date();
+  const hours = date.getHours();
+  let greeting = " SELAMAT ";
+
+  if (hours >= 0 && hours < 10) {
+    greeting += "PAGI";
+  } else if (hours >= 10 && hours < 15) {
+    greeting += "SIANG";
+  } else if (hours >= 15 && hours < 18) {
+    greeting += "SORE";
+  } else {
+    greeting += "MALAM";
+  }
+
+  
+  const h3 = document.querySelector('h3');
+  h3.textContent = ''; //mulai animask mengetik
+  typeWriter(greeting, h3);
+}
+
+function typeWriter(text, targetElement) {
+  let i = 0;
+  const speed = 150; // kecepatan pengetikan (ms)
+
+  function type() {
+    if (i < text.length) {
+      targetElement.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+
+  type();
+}
+
+document.addEventListener('DOMContentLoaded', saySelamat);
+</script>
+      
+      
+      
+      
+    </div>
+  </div>
+</body2>
+</html>
+
+
